@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Airpods Wireless Bluetooth Headphones",
     image: "/images/airpods.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "iPhone 11 Pro 256GB Memory",
     image: "/images/phone.jpg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Cannon EOS 80D DSLR Camera",
     image: "/images/camera.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Sony Playstation 4 Pro White Version",
     image: "/images/playstation.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Logitech G-Series Gaming Mouse",
     image: "/images/mouse.jpg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Amazon Echo Dot 3rd Generation",
     image: "/images/alexa.jpg",
     description:
@@ -76,6 +70,30 @@ const products = [
     countInStock: 0,
     rating: 4,
     numReviews: 12,
+  },
+  {
+    name: "Sony WH-1000XM4 NC Headphones",
+    image: "/images/sony.jpg",
+    description:
+      "Discover how the WH-1000XM4 headphones blend our most advanced noise cancelling with exceptional sound quality and a range of smart features for an unrivalled listening experience",
+    brand: "Sony",
+    category: "Electronics",
+    price: 345.99,
+    countInStock: 20,
+    rating: 4.5,
+    numReviews: 23,
+  },
+  {
+    name: "Marshall WOBURN III Speakers",
+    image: "/images/marshall.jpg",
+    description:
+      "A powerful newcomer, the Woburn III has been re-engineered with a new three-way driver system which delivers greater clarity whether you use it as home audio, or as a TV speaker. Dynamic Loudness adjusts the tonal balance of this Bluetooth speaker, delivering you the very best from home audio",
+    brand: "Marshall",
+    category: "Electronics",
+    price: 579.99,
+    countInStock: 22,
+    rating: 4.0,
+    numReviews: 19,
   },
 ];
 
