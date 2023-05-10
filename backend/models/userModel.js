@@ -23,7 +23,7 @@ const userSchema = mongoose.Schema(
     },
   },
   {
-    timestanps: true,
+    timestamps: true,
   }
 );
 

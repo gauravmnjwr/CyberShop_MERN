@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema(
   {
@@ -7,7 +7,6 @@ const orderSchema = mongoose.Schema(
       required: true,
       ref: "User",
     },
-
     orderItems: [
       {
         name: { type: String, required: true },
@@ -52,7 +51,7 @@ const orderSchema = mongoose.Schema(
       required: true,
       default: 0.0,
     },
-    isPayed: {
+    isPaid: {
       type: Boolean,
       required: true,
       default: false,
@@ -70,7 +69,7 @@ const orderSchema = mongoose.Schema(
     },
   },
   {
-    timestanps: true,
+    timestamps: true,
   }
 );
 

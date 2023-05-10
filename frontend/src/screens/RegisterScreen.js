@@ -4,9 +4,9 @@ import { Form, Button, Row, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import { register } from "../actions/userActions";
 import FormContainer from "../components/FormContainer";
 import { useNavigate } from "react-router";
+import { register } from "../actions/userActions";
 
 function RegisterScreen() {
   const [name, setName] = useState("");
