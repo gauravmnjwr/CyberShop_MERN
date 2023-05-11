@@ -109,16 +109,16 @@ web-vitals: ^2.1.4 |
 # Screenshots of this project
 
 
-##User visit public and Home page
+User visit public and Home page
 ![User visit public and Home page](https://github.com/gauravmnjwr/CyberShop_MERN/assets/91672896/f035d3d5-f6eb-4a76-8ac8-f9ed70946e87)
 
 
-##User can sign in or sign up!
+User can sign in or sign up!
 ![User can sign in or sign up](https://github.com/gauravmnjwr/CyberShop_MERN/assets/91672896/7f9ee4e2-81fa-4560-9b8b-cd07b7d17e68)
 
 
 
-##After signing in user can go to account route and make request to token-protected API endpoint
+After signing in user can go to account route and make request to token-protected API endpoint
 ![After signing in user can go to profile route](https://github.com/gauravmnjwr/CyberShop_MERN/assets/91672896/a00bc27f-0e99-4a4d-b576-2c1dde36fdd2)
 
 
