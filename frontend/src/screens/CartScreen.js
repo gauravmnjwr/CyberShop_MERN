@@ -5,6 +5,7 @@ import Message from "../components/Message";
 import { useParams } from "react-router-dom";
 import { useLocation } from "react-router";
 import { useNavigate } from "react-router-dom";
+import Meta from "../components/Meta";
 
 import {
   Row,
@@ -52,6 +53,7 @@ function CartScreen(props) {
 
   return (
     <Row>
+      <Meta title="Cart" />
       <Col md={8}>
         <h1>Shopping Cart</h1>
         {cartItems.length === 0 ? (

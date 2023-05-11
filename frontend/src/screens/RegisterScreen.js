@@ -7,6 +7,7 @@ import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
 import { useNavigate } from "react-router";
 import { register } from "../actions/userActions";
+import Meta from "../components/Meta";
 
 function RegisterScreen() {
   const [name, setName] = useState("");
@@ -49,6 +50,8 @@ function RegisterScreen() {
 
   return (
     <FormContainer>
+      <Meta title="Register" />
+
       <h1>Sign Up</h1>
       {message && <Message variant="danger">{message}</Message>}
       {error && <Message variant="danger">{error}</Message>}

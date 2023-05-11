@@ -8,6 +8,7 @@ import { getUserDetails, updateUserProfile } from "../actions/userActions";
 import { useNavigate } from "react-router";
 import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
 import { listMyOrders } from "../actions/orderActions";
+import Meta from "../components/Meta";
 
 function ProfileScreen() {
   const [name, setName] = useState("");
@@ -60,6 +61,8 @@ function ProfileScreen() {
 
   return (
     <Row>
+      <Meta title="User Profile" />
+
       <Col md={3}>
         <h2>User Proflie</h2>
         {message && <Message variant="danger">{message}</Message>}

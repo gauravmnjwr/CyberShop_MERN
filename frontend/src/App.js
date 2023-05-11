@@ -19,7 +19,7 @@ function App() {
       <main className="py-3">
         <Container>
           <Routes>
-            <Route path="/order/:id" element={<OrderScreen />} />
+            <Route exact path="/order/:id" element={<OrderScreen />} />
             <Route path="/login" element={<LoginScreen />} />
             <Route path="/placeorder" element={<PlaceOrderScreen />} />
             <Route path="/payment" element={<PaymentScreen />} />
@@ -28,6 +28,7 @@ function App() {
             <Route path="/profile" element={<ProfileScreen />} />
             <Route path="/product/:id" element={<ProductScreen />} />
             <Route path="/cart/:id?" element={<CartScreen />} />
+            <Route path="/search/:keyword" element={<HomeScreen />} />
             <Route path="/" element={<HomeScreen />} exact />
           </Routes>
         </Container>

@@ -11,6 +11,7 @@ import { useNavigate } from "react-router";
 import CheckoutSteps from "../components/CheckoutSteps";
 import { useParams } from "react-router-dom";
 import { ORDER_PAY_RESET } from "../constants/orderConstants";
+import Meta from "../components/Meta";
 
 function OrderScreen() {
   // const dispatch = useDispatch();
@@ -39,7 +40,6 @@ function OrderScreen() {
   useEffect(() => {
     const addPayPalScript = async () => {
       const { data: clientId } = await axios.get("/api/config/paypal");
-      console.log(clientId);
       const script = document.createElement("script");
       script.type = "text/javascript";
       script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}`;
@@ -63,9 +63,7 @@ function OrderScreen() {
   }, [order, id, dispatch, successPay]);
 
   const successPaymentHandler = (paymentResult) => {
-    console.log(paymentResult);
     dispatch(payOrder(id, paymentResult));
-    // order.isPaid = true;
   };
 
   return (
@@ -76,6 +74,7 @@ function OrderScreen() {
         <Message variant="danger">{error}</Message>
       ) : (
         <>
+          <Meta title="Checkout Details" />
           <h1>Order {order._id}</h1>
           <Row>
             <Col md={8}>

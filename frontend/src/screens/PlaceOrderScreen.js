@@ -7,6 +7,7 @@ import Message from "../components/Message";
 
 import { useNavigate } from "react-router";
 import CheckoutSteps from "../components/CheckoutSteps";
+import Meta from "../components/Meta";
 
 function PlaceOrderScreen() {
   // const dispatch = useDispatch();
@@ -58,6 +59,8 @@ function PlaceOrderScreen() {
 
   return (
     <>
+      <Meta title="Place Order" />
+
       <CheckoutSteps step1 step2 step3 step4 />
       <Row>
         <Col md={8}>

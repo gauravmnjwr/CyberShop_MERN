@@ -22,7 +22,6 @@ export const createOrder = (order) => async (dispatch, getState) => {
     const {
       userLogin: { userInfo },
     } = getState();
-    console.log(userInfo);
 
     const config = {
       headers: {
@@ -52,7 +51,6 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
     const {
       userLogin: { userInfo },
     } = getState();
-    console.log(userInfo);
 
     const config = {
       headers: {

@@ -5,6 +5,7 @@ import FormContainer from "../components/FormContainer";
 import { useNavigate } from "react-router";
 import { savePaymentMethod } from "../actions/cartActions";
 import CheckoutSteps from "../components/CheckoutSteps";
+import Meta from "../components/Meta";
 
 function PaymentScreen() {
   const cart = useSelector((state) => state.cart);
@@ -26,6 +27,8 @@ function PaymentScreen() {
 
   return (
     <FormContainer>
+      <Meta title="Payment" />
+
       <CheckoutSteps step1 step2 step3 />
       <h1>Payment Method</h1>
       <Form onSubmit={submitHandler}>

@@ -28,7 +28,6 @@ export const login = (email, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
-    console.log("heyyy");
 
     const { data } = await axios.post(
       "/api/users/login",
