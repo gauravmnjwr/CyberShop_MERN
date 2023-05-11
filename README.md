@@ -7,6 +7,7 @@ MongoDB, Expressjs, React/Redux, Nodejs
 
 
 > CyberShop is a fullstack implementation in MongoDB, Expressjs, React/Redux, Nodejs.
+> This project includes features such as product listing, product search, cart management, user authentication, payment gateway integration, and more.
 
 ## Clone or Download
 
