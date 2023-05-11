@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <Container>
-        <Row>
+        <Row className="footer-row">
           <Col className="text-center py-3">
             Created By{" "}
             <a
@@ -17,7 +17,7 @@ function Footer() {
             </a>
           </Col>
         </Row>
-        <Row>
+        <Row className="footer-row footer-info">
           <Col className="text-center py-3">
             <a
               href="https://github.com/gauravmnjwr/CyberShop_MERN"

@@ -96,3 +96,13 @@ h2 {
     margin: auto;
   }
 }
+
+.footer-row {
+  font-size: 12px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
