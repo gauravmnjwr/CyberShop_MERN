@@ -14,7 +14,7 @@ import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Header />
       <main className="py-3">
         <Container>
