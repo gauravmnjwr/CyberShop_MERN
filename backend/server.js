@@ -15,14 +15,13 @@ const corsOptions = {
   optionSuccessStatus: 200,
 };
 
-app.use(cors(corsOptions));
-
 dotenv.config();
 
 connectDB();
 
 const app = express();
 
+app.use(cors(corsOptions));
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
