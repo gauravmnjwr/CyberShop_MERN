@@ -17,6 +17,7 @@ import {
 } from "../constants/userConstants";
 
 import { ORDER_LIST_MY_REQUEST } from "../constants/orderConstants";
+import { BASE_URL } from "../helper/helper";
 
 export const login = (email, password) => async (dispatch) => {
   try {
@@ -30,7 +31,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/users/login",
+      `${BASE_URL}/api/users/login`,
       { email, password },
       config
     );
@@ -67,7 +68,7 @@ export const register = (name, email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      "/api/users",
+      `${BASE_URL}/api/users`,
       { name, email, password },
       config
     );
@@ -106,7 +107,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(`/api/users/${id}`, config);
+    const { data } = await axios.get(`${BASE_URL}/api/users/${id}`, config);
 
     dispatch({
       type: USER_DETAILS_SUCCESS,
@@ -135,7 +136,11 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.put(`/api/users/profile`, user, config);
+    const { data } = await axios.put(
+      `${BASE_URL}/api/users/profile`,
+      user,
+      config
+    );
 
     dispatch({
       type: USER_UPDATE_PROFILE_SUCCESS,

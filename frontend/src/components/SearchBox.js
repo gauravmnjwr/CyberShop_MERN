@@ -14,7 +14,7 @@ function SearchBox() {
     }
   };
   return (
-    <Form onSubmit={submitHandler} className="px-5">
+    <Form onSubmit={submitHandler} className="px-5 search-box">
       <InputGroup>
         <Form.Control
           type="text"
